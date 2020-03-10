@@ -1,27 +1,39 @@
+# imports the Character class from the file character.py
 from character import Character
+
+# imports random module
 import random
+
+# All the for the game
+the_answers = ['David', 'Carly', 'Sarina', 'Playstation',
+               'Android', 'Anime', 'Cash', 'Music', 'Videos',
+               'Games', 'CPU', 'GPU', 'Motherboard', 'RAM', 'SSD',
+               'BIOS', 'Python', 'Programming', 'Treehouse',
+               'Guitar', 'Kratos', 'Atreus', 'Hero', 'Goku', 'Deku',
+               'Naruto', 'Vegeta', 'Aloy', 'CJ']
 
 
 class Phrase:
-    the_answers = ['David', 'Carly', 'Sarina', 'Playstation',
-                   'Android', 'Anime', 'Cash', 'Music', 'Videos',
-                   'Games', 'CPU', 'GPU', 'Motherboard', 'RAM', 'SSD',
-                   'BIOS', 'Python', 'Programming', 'Treehouse',
-                   'Guitar', 'Kratos', 'Atreus', 'Hero', 'Goku', 'Deku',
-                   'Naruto', 'Vegeta', 'Aloy', 'CJ']
-
-    def __init__(self, phrase):
+    # initalizes the the class with two parameters
+    def __init__(self, phrase, player_answers):
         self.phrase = phrase
+        self.player_answers = player_answers
 
+    # this method randomizes the self.phrase object,
+    # that have the answers the_answers.
+    # outputs the randomized word with underscores
     def phrase_ghost(self):
-        self.random_word = random.choice(self.the_answers)
+        # store this within phrase
+        self.random_word = random.choice(self.phrase)
         self.phrase_ghost = ['_ '] * len(self.random_word)
         return ''.join(self.phrase_ghost)
 
+    # This method reveals the underscores from phrase_ghost
+    # if guessed correctly
     def phrase_reveal(self):
         count = 0
         for index, letter in enumerate(self.random_word):
-            if letter.upper() in self.phrase:
+            if letter.upper() in self.player_answers:
                 count += 1
                 self.phrase_ghost.insert(count-1, letter.upper())
                 self.phrase_ghost.pop(count)
