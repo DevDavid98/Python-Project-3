@@ -4,14 +4,6 @@ from character import Character
 # imports random module
 import random
 
-# All the for the game
-the_answers = ['David', 'Carly', 'Sarina', 'Playstation',
-               'Android', 'Anime', 'Cash', 'Music', 'Videos',
-               'Games', 'CPU', 'GPU', 'Motherboard', 'RAM', 'SSD',
-               'BIOS', 'Python', 'Programming', 'Treehouse',
-               'Guitar', 'Kratos', 'Atreus', 'Hero', 'Goku', 'Deku',
-               'Naruto', 'Vegeta', 'Aloy', 'CJ']
-
 
 class Phrase:
     # initalizes the the class with two parameters
