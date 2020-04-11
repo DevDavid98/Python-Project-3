@@ -3,10 +3,17 @@ import random
 import sys
 from character import Character
 from phrase import Phrase
-from phrase import the_answers
 
 # stores the phrase_ghost from phrase.py
 phrases = []
+
+# All the for the game
+the_answers = ['David', 'Carly', 'Sarina', 'Playstation',
+               'Android', 'Anime', 'Cash', 'Music', 'Videos',
+               'Games', 'CPU', 'GPU', 'Motherboard', 'RAM', 'SSD',
+               'BIOS', 'Python', 'Programming', 'Treehouse',
+               'Guitar', 'Kratos', 'Atreus', 'Hero', 'Goku', 'Deku',
+               'Naruto', 'Vegeta', 'Aloy', 'CJ']
 
 
 class Game:
