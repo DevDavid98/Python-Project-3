@@ -7,8 +7,6 @@ if __name__ == "__main__":
     game()
 
 # Have a wonderful day/night to who ever reads this.
-# Hopefully Everthing checks out
-# I think I fixed the issue that made me fail, hopefully I did.
-# I think I was supposed to make the Phrase class
-# parameter phrase = the list called the_answers
-# To make the code more moduler, or maybe I overthink things hmm..
+# Hopefully Everything checks out
+# I fixed the issues within the code that was unexceptional and not fluid or practical
+# Made the code more efficient and modular.
